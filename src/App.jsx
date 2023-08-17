@@ -1,9 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import ExerciseDetail from "./pages/ExerciseDetail";
+
 function App() {
   return (
     <>
-      <p className="text-red-500 font-semibold text-5xl text-center">
-        This is Fitness App
-      </p>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/exercise/:id" element={<ExerciseDetail />} />
+      </Routes>
     </>
   );
 }
