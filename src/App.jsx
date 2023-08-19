@@ -8,7 +8,8 @@ import { Box } from "@mui/material";
 
 import "./App.css";
 
-const App = () => (
+
+const App = () =>  (
   <Box width="400px" sx={{ width: { xl: "1488px" } }} m="auto">
     <Navbar />
     <Routes>
