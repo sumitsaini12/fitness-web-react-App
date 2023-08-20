@@ -1,5 +1,7 @@
-import React, { useEffect, useState, memo } from "react";
-import { Box, Stack, Pagination, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import Pagination from "@mui/material/Pagination";
+import { Box, Stack, Typography } from "@mui/material";
+
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 import Loader from "./Loader";
@@ -83,4 +85,4 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   );
 };
 
-export default memo(Exercises);
+export default Exercises;
