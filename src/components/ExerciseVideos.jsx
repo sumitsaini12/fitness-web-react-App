@@ -1,8 +1,6 @@
-import React, {memo} from "react";
+import React, { memo } from "react";
 
-function ExerciseVideos(){
-return(
-<>ExerciseVideos</>
-);
+function ExerciseVideos() {
+  return <>ExerciseVideos</>;
 }
-export default memo(ExerciseVideos)
+export default memo(ExerciseVideos);
